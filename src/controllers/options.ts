@@ -2,9 +2,9 @@ import { Request, Response } from "express";
 import { StatusCodes, ReasonPhrases } from "http-status-codes";
 import { Option } from '../definitions/options';
 
-const MAX_OPTIONS = 10;
+export const MAX_OPTIONS = 10;
 
-const postRandomOption = (
+export const postRandomOption = (
   req: Request,
   res: Response
 ) => {
@@ -75,4 +75,5 @@ const postRandomOption = (
 
 module.exports = {
   postRandomOption,
+  MAX_OPTIONS
 };
